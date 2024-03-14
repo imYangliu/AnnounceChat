@@ -1,0 +1,14 @@
+#!/bin/sh
+#PBS -N p_evaluation
+#PBS -j eo
+#PBS -q gpu
+#PBS -l walltime=120:00:00
+#PBS -m a
+#PBS -M q1576310153@qq.com
+#PBS -l nodes=1:ppn=48:gpus=2
+pwd=$PBS_O_WORKDIR
+cd $pwd
+source ./py39/bin/activate
+python3 evaluation.py
+# python3 test_cuda.py
+# jupyter nbconvert --to notebook --execute --inplace p_tune_ans_choice_7b.ipynb~
