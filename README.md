@@ -255,4 +255,4 @@ with open('./data/data_combine_test.json', 'r') as file:
 df = pd.DataFrame(answer_list)
 df.to_excel('./evaluation_result.xlsx')
 ```
-> 杨柳：将增加Prompt的数据，逐个放入模型中获取回答，再将结果保存为evaluation_result.xlsx文件。
+> 将增加Prompt的数据，逐个放入模型中获取回答，再将结果保存为evaluation_result.xlsx文件。
