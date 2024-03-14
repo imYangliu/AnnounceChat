@@ -9,5 +9,4 @@ pwd=$PBS_O_WORKDIR
 cd $pwd
 source ./py39/bin/activate
 python3 p_tune_ans_choice_7b.py
-# python3 test_cuda.py
-# jupyter nbconvert --to notebook --execute --inplace p_tune_ans_choice_7b.ipynb~
+# jupyter nbconvert --to notebook --execute --inplace p_tune_ans_choice_7b.ipynb
